@@ -120,7 +120,7 @@ Component failures are **not mutually exclusive**; 24 historical machines suffer
 ### C. Class Imbalance & SMOTE Benchmarking
 Machine failures account for only 3.39% of the dataset. We benchmarked cost-sensitive class weighting vs. SMOTE (applied strictly on training data):
 - Cost-sensitive weighting allowed tree ensembles to maintain precision above 87% without generating excessive false positive maintenance alerts.
-- SMOTE increased sensitivity for linear models but introduced false positives for tree ensembles on boundary points.
+- SMOTE increased sensitivity for linear models but introduced false positives for tree ensembles on boundary points. It identifies the nearest minority-class neighbours and creates new samples through interpolation between them. This improves minority-class representation and helps the model learn failure patterns more effectively. SMOTE is applied only to the training data to prevent data leakage.
 
 ---
 
