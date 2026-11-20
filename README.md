@@ -60,7 +60,6 @@ MaintenAI bridges operational technology (OT) telemetry with machine learning pi
                                     ▼
                  [ Streamlit Enterprise Web Interface ]
 ```
-
 ---
 
 ## 📊 Dataset Specifications
